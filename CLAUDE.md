@@ -28,6 +28,8 @@ Before starting any task, load only the files relevant to that task type.
 | Template maintenance | `docs/0_GROUND_RULES.md`, `SYSTEM_PROMPT.md` | All others |
 | Roadmap / planning | `docs/5_ROADMAP_AND_TASKS.md` | All others |
 | Weekly health check | `docs/6_HEALTH_CHECK.md` | All others |
+| Code — UI copy / i18n | `docs/0_GROUND_RULES.md`, `docs/7_CONTENT_I18N.md` | `docs/2_ARCHITECTURE.md`, `docs/4_SEO_AND_AEO.md`, `docs/6_CONTENT_AND_SOCIAL.md` |
+| Code — data / analysis | `docs/0_GROUND_RULES.md`, `docs/8_DATA_AND_ANALYSIS.md` | `docs/3_UI_UX_GUIDELINES.md`, `docs/4_SEO_AND_AEO.md`, `docs/6_CONTENT_AND_SOCIAL.md` |
 
 > Always load `docs/0_GROUND_RULES.md` for any task — it is the override document.
 
