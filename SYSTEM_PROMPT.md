@@ -1,12 +1,12 @@
 # SYSTEM OPERATING INSTRUCTIONS
 
-> Version: 1.10 — Universal template. All project-specific details live in `/docs/`.
+> Version: 1.12 — Universal template. All project-specific details live in `/docs/`.
 
 ---
 
 ## 1. Source of Truth
 
-This project uses modular documentation in `/docs/`. Consult the relevant files before any task:
+This project uses modular documentation in `/docs/`. Consult the relevant files before any task. Load only what is needed for the task type — do not load all docs by default. The **Context Loading Policy** in `CLAUDE.md` defines which files to load per task type:
 
 | File | Purpose |
 |---|---|
@@ -16,6 +16,11 @@ This project uses modular documentation in `/docs/`. Consult the relevant files 
 | `docs/3_UI_UX_GUIDELINES.md` | Design system, tokens, accessibility, performance budgets |
 | `docs/4_SEO_AND_AEO.md` | Meta tags, structured data, semantic HTML |
 | `docs/5_ROADMAP_AND_TASKS.md` | Execution state, backlog, completed tasks |
+| `docs/6_CONTENT_AND_SOCIAL.md` | Content strategy, social media, SEO/AEO guidelines |
+| `docs/6_HEALTH_CHECK.md` | Weekly health check checklist (routes, schema, auth, security, build, docs, integrations, i18n) |
+| `docs/7_CONTENT_I18N.md` | UI copy rules, i18n key naming convention, namespace strategy, copy rules, length constraints |
+| `docs/8_DATA_AND_ANALYSIS.md` | Metric registry, assumptions log, source contracts, pipeline order, data quality checks |
+| `docs/prompts.md` | Reusable prompt templates, Lovable vocabulary reference, and DO NOT list |
 | `docs/decisions/` | Architecture Decision Records (ADR/ODR series) |
 
 ### Conflict Resolution
@@ -200,3 +205,5 @@ A task is only **done** when all applicable items are confirmed:
 | 1.8 | 2026-03-15 | Added `docs/6_CONTENT_AND_SOCIAL.md` — content & social media strategy with SEO/AEO 2026 best practices. Added source-of-truth entry (§1), trigger matrix row (§6). PR number required in roadmap format (§3) |
 | 1.9 | 2026-03-30 | Added Context Loading Policy to `CLAUDE.md` — task-type → docs mapping table. Updated §1 to delegate context-loading to `CLAUDE.md`, eliminating dual-source ambiguity |
 | 1.10 | 2026-03-30 | Removed stack-specific language: RLS → authorisation model; Edge functions → API handlers; raw HTML guardrail generalised to cover React, Vue, vanilla JS |
+| 1.11 | 2026-03-31 | Added UI Patterns + States to `docs/3_UI_UX_GUIDELINES.md`; Lovable Vocabulary Reference + DO NOT list to `docs/prompts.md`; new `docs/7_CONTENT_I18N.md`; updated §1 source-of-truth table and §6 trigger matrix |
+| 1.12 | 2026-03-31 | New `docs/8_DATA_AND_ANALYSIS.md` — stack-agnostic data governance: metric registry, assumptions log, source contracts, pipeline order, data quality checks, cohort definitions; updated §1 and §6 |
