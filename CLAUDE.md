@@ -50,6 +50,19 @@ Ver `docs/9_AGENT_SKILLS.md` para o guia completo (framework KEPT, estrutura, re
 3. Open PR: `gh pr create`
 4. Wait for review and approval before merging
 
+## Context7 — Documentação de Bibliotecas
+
+Para qualquer biblioteca, framework, SDK, API ou CLI listada no **Tech Stack** acima, usar **Context7** antes de responder sobre ela — evita sintaxe desactualizada e garante que as respostas reflectem a versão em uso.
+
+| Quando usar | Como usar |
+|---|---|
+| Pergunta sobre API/sintaxe de uma lib | `mcp__context7__resolve-library-id` → `mcp__context7__query-docs` |
+| Review de arquitectura (`/arch-review`) | Context7 para cada tecnologia do stack |
+| Debugging de lib específica | Context7 com tópico relevante (ex: `authentication`, `rls`, `hooks`) |
+| Migração de versão | Context7 com tópico `migration` ou `changelog` |
+
+> Não usar Context7 para: lógica de negócio, refactoring, code review, conceitos gerais de programação.
+
 ## Related Projects
 
 | Project | Relationship |
