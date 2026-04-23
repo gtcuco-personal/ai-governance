@@ -20,6 +20,7 @@
 2. Do NOT refactor unrelated code.
 3. Do NOT rename or delete files without justification and approval.
 4. TODO: Add project-specific rules (e.g., i18n, design tokens, database prefixes).
+5. **Repo is the single source of truth** — all data that enters the database (schema, seed, content, configuration) must originate from files in this repository. Nothing is inserted directly into the database via UI, admin tools, or any mechanism that bypasses the repo.
 
 ## Internationalisation
 
