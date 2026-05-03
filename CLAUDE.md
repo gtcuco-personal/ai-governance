@@ -33,6 +33,8 @@ Before starting any task, load only the files relevant to that task type.
 | Code — data / analysis | `docs/0_GROUND_RULES.md`, `docs/8_DATA_AND_ANALYSIS.md` | `docs/3_UI_UX_GUIDELINES.md`, `docs/4_SEO_AND_AEO.md`, `docs/6_CONTENT_AND_SOCIAL.md` |
 | Agent skill — create/edit | `docs/9_AGENT_SKILLS.md`, `skills/template/SKILL.md` | All others |
 | Agent safety review | `docs/10_AGENT_SAFETY.md`, `SYSTEM_PROMPT.md` | All others |
+| Compliance review | `docs/0_GROUND_RULES.md`, `docs/13_COMPLIANCE_FRAMEWORKS.md`, `SECURITY.md` | All others |
+| AI governance / EU AI Act / risk classification | `docs/14_AI_GOVERNANCE.md`, `docs/1_BUSINESS_CONTEXT.md` | All others |
 
 > Always load `docs/0_GROUND_RULES.md` for any task — it is the override document.
 

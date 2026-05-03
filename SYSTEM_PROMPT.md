@@ -23,6 +23,8 @@ This project uses modular documentation in `/docs/`. Consult the relevant files 
 | `docs/prompts.md` | Reusable prompt templates, Lovable vocabulary reference, and DO NOT list |
 | `docs/10_AGENT_SAFETY.md` | Trust hierarchy, minimal privilege, irreversible action gates, prompt injection policy, red flags |
 | `docs/decisions/` | Architecture Decision Records (ADR/ODR series) |
+| `docs/13_COMPLIANCE_FRAMEWORKS.md` | Compliance framework directory — which standards apply per profile (universal, ai-governance, security, health, finance, climate) and when to activate them |
+| `docs/14_AI_GOVERNANCE.md` | AI governance — EU AI Act risk classification, ISO/IEC 42001:2023 AIMS, NIST AI RMF, AI inventory, risk register, human oversight, incident response |
 
 ### Conflict Resolution
 
