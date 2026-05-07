@@ -6,7 +6,7 @@ Governance tools and templates for AI-assisted software projects. Reference impl
 
 | Key | Value |
 |-----|-------|
-| **Local path** | `~/Documents/github/ai-governance` |
+| **Local path** | `~/devs/github/ai-governance` |
 | **Remote** | `https://github.com/gtcuco-personal/ai-governance.git` |
 | **GitHub account** | `gtcuco-personal` |
 | **Production URL** | N/A (GitHub Template) |
