@@ -1,6 +1,6 @@
 # SYSTEM OPERATING INSTRUCTIONS
 
-> Version: 1.14 — Universal template. All project-specific details live in `/docs/`.
+> Version: 1.18 — Universal template. All project-specific details live in `/docs/`.
 
 ---
 
@@ -48,7 +48,7 @@ This project uses modular documentation in `/docs/`. Consult the relevant files 
 - All code must pass `lint` with zero errors before a task is declared complete. Warnings are allowed only if explicitly documented in `docs/0_GROUND_RULES.md`; otherwise, treat new warnings as errors.
 - Use strict input validation (project-approved schema validator, e.g. Zod, Joi, Pydantic) at system boundaries (user input, external APIs, file parsing).
 - Never expose secrets, API keys, or service-role credentials to the client.
-- Assume all database tables enforce Row-Level Security unless documented otherwise.
+- Assume all database access is protected by the project's authorisation model (e.g. Row-Level Security, middleware guards, or equivalent) unless documented otherwise in `docs/0_GROUND_RULES.md`.
 
 ### Data Formats
 - **Dates:** ISO 8601 — `YYYY-MM-DD`
@@ -64,7 +64,7 @@ This project uses modular documentation in `/docs/`. Consult the relevant files 
 ### Error Handling
 - Use typed error catching: `catch (error: unknown)` with `instanceof Error` guards.
 - Log errors with enough context to debug (function name, input summary, error message).
-- Edge functions and API handlers must return structured error responses, never raw stack traces.
+- API handlers and server functions must return structured error responses, never raw stack traces.
 - Project-specific error patterns (response format, logging strategy) are defined in `docs/0_GROUND_RULES.md`.
 
 ### Internationalisation
@@ -255,8 +255,12 @@ See `docs/10_AGENT_SAFETY.md` for the full policy: irreversible action gates, ru
 | 1.7 | 2026-03-14 | Added Debugging Escalation (4-Step Framework) and Build Health Checker to §3. Added Security Review Questions and Auth Setup Checklist to SECURITY.md. Added Database Design Checklist to docs/2_ARCHITECTURE.md. See ODR-003 |
 | 1.8 | 2026-03-15 | Added `docs/6_CONTENT_AND_SOCIAL.md` — content & social media strategy with SEO/AEO 2026 best practices. Added source-of-truth entry (§1), trigger matrix row (§6). PR number required in roadmap format (§3) |
 | 1.9 | 2026-03-30 | Added Context Loading Policy to `CLAUDE.md` — task-type → docs mapping table. Updated §1 to delegate context-loading to `CLAUDE.md`, eliminating dual-source ambiguity |
-| 1.10 | 2026-03-30 | Removed stack-specific language: RLS → authorisation model; Edge functions → API handlers; raw HTML guardrail generalised to cover React, Vue, vanilla JS |
+| 1.10 | 2026-03-30 | Removed stack-specific language: RLS → authorisation model; Edge functions → API handlers; `dangerouslySetInnerHTML` rule generalised to cover React, Vue, vanilla JS |
 | 1.11 | 2026-03-31 | Added UI Patterns + States to `docs/3_UI_UX_GUIDELINES.md`; Lovable Vocabulary Reference + DO NOT list to `docs/prompts.md`; new `docs/7_CONTENT_I18N.md`; updated §1 source-of-truth table and §6 trigger matrix |
+| 1.18 | 2026-05-17 | Added `docs/12_DEPENDENCY_MANAGEMENT.md` (licence policy, SBOM, SLSA Level 2, upgrade strategy, CVE SLAs, EOL management, CRA linkage) + ODR-006. 4-location sync: §1 source table, §6 trigger matrix, CLAUDE.md, README.md. SECURITY.md Dependencies section updated |
+| 1.17 | 2026-05-17 | Added `docs/11_TESTING.md` (testing pyramid, framework selection, coverage, CI/CD gates, AI-specific evals linked to ISO 42001 A.7.2). Added ODR-005 (testing governance + 4-location doc sync policy). Updated §1 source table, §6 trigger matrix, CLAUDE.md Context Loading Policy (2 new task types), README.md directory listing |
+| 1.16 | 2026-05-17 | Compliance refresh: EU Cyber Resilience Act (CRA, Reg. 2024/2847) + SBOM added to Tier 3; ISO 25010:2023 Safety characteristic + Flexibility rename; ISO 42001 Annex SL note; OWASP ASVS + NIST SSDF in Tier 3; GDPR Art. 25 + RoPA; Privacy by Design checklist; NIS2 scope note; PCI DSS v3.2.1 EOL; NIST CSF 2.0 Govern function note; vulnerability disclosure timeline + ISO 29147/30111 reference; §6 trigger matrix rows for SBOM/testing/dependency |
+| 1.15 | 2026-05-03 | Added `docs/13_COMPLIANCE_FRAMEWORKS.md` (Tier 1 universal, Tier 2 AI, Tier 3 security/privacy, Tier 4 domain) and `docs/14_AI_GOVERNANCE.md` (EU AI Act, ISO 42001, NIST AI RMF, AI inventory, risk register). Updated §1 source-of-truth table and §6 trigger matrix with compliance and AI governance rows |
 | 1.14 | 2026-04-08 | Added §9 Trust Hierarchy + Prompt Injection Policy + Minimal Privilege. New `docs/10_AGENT_SAFETY.md`. Updated checklist. Governance sync with template v1.14 |
 | 1.13 | 2026-04-07 | Added §3A Workflow Orchestration — plan-first for 3+ step tasks, subagent delegation strategy, self-improvement loop via `tasks/lessons.md`, demand elegance for non-trivial changes |
 | 1.12 | 2026-03-31 | New `docs/8_DATA_AND_ANALYSIS.md` — stack-agnostic data governance: metric registry, assumptions log, source contracts, pipeline order, data quality checks, cohort definitions; updated §1 and §6 |
