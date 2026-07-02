@@ -147,7 +147,7 @@ pip-audit --vulnerability-service=osv --fail-on CRITICAL,HIGH
 
 ## Health Check Items
 
-Add to `docs/6_HEALTH_CHECK.md` quarterly review:
+Add to `docs/15_HEALTH_CHECK.md` quarterly review:
 
 - [ ] `npm audit` / `pip audit` run — zero High/Critical open
 - [ ] Dependabot PRs reviewed and resolved (no stale open PRs > 30 days)

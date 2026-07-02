@@ -4,3 +4,15 @@ __pycache__/
 *.pyc
 .env
 .env.local
+
+# dados sensíveis — nunca versionar
+*IRS*
+*fatura*
+*faturas*
+*invoice*
+*recibo*
+*comprovativo*
+*.nif
+*IBAN*
+secrets/
+*.env.local
