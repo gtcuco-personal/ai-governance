@@ -137,7 +137,7 @@ A regression is triggered when:
 
 ## Health Check Items
 
-Add to `docs/6_HEALTH_CHECK.md` weekly review:
+Add to `docs/15_HEALTH_CHECK.md` weekly review:
 
 - [ ] CI pipeline green (no skipped or flaky tests accumulating)
 - [ ] Coverage report reviewed — no silent drops

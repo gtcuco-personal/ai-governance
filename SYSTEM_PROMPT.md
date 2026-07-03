@@ -1,6 +1,6 @@
 # SYSTEM OPERATING INSTRUCTIONS
 
-> Version: 1.18 — Universal template. All project-specific details live in `/docs/`.
+> Version: 2.0 — Universal template. All project-specific details live in `/docs/`.
 
 ---
 
@@ -17,7 +17,7 @@ This project uses modular documentation in `/docs/`. Consult the relevant files 
 | `docs/4_SEO_AND_AEO.md` | Meta tags, structured data, semantic HTML |
 | `docs/5_ROADMAP_AND_TASKS.md` | Execution state, backlog, completed tasks |
 | `docs/6_CONTENT_AND_SOCIAL.md` | Content strategy, social media, SEO/AEO guidelines |
-| `docs/6_HEALTH_CHECK.md` | Weekly health check checklist (routes, schema, auth, security, build, docs, integrations, i18n) |
+| `docs/15_HEALTH_CHECK.md` | Weekly health check checklist (routes, schema, auth, security, build, docs, integrations, i18n) |
 | `docs/7_CONTENT_I18N.md` | UI copy rules, i18n key naming convention, namespace strategy, copy rules, length constraints |
 | `docs/8_DATA_AND_ANALYSIS.md` | Metric registry, assumptions log, source contracts, pipeline order, data quality checks |
 | `docs/prompts.md` | Reusable prompt templates, Lovable vocabulary reference, and DO NOT list |
@@ -245,6 +245,7 @@ See `docs/10_AGENT_SAFETY.md` for the full policy: irreversible action gates, ru
 
 | Version | Date | Changes |
 |---|---|---|
+| 2.0 | 2026-07-02 | Synced to template v2.0 via /sync-repos: docs/6_HEALTH_CHECK.md renamed to docs/15_HEALTH_CHECK.md; structural gaps filled per audit (see PR). Full v2.0 content (Applicability Gate, lean-by-default tags, SEO/AEO merge into 6_CONTENT_AND_SOCIAL.md) not yet applied — pending a future content sync. |
 | 1.0 | 2026-03-11 | Initial template — extracted from LusiberiaStays SYSTEM_PROMPT, made universal |
 | 1.1 | 2026-03-11 | Added Execution Modes (A/B/C), Task Types table, Uncertainty Criteria, Task Completion Checklist, multi-task exceptions, conflict resolution, roadmap format, git workflow |
 | 1.2 | 2026-03-11 | Missing doc → skeleton + flag (not auto-create). Checklist aligned with task types. Mode detection heuristics. Error handling references Ground Rules. Test infra missing → propose follow-up |
