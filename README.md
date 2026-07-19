@@ -1,5 +1,7 @@
 # AI Governance
 
+Shared operating policy (v2.0) is defined in [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md).
+
 Universal template for AI-assisted software development governance. Provides a complete documentation structure, system prompt, and operational rules for AI agents working on codebases.
 
 ## What This Is
