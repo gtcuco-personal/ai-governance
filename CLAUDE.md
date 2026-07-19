@@ -28,9 +28,9 @@ Before starting any task, load only the files relevant to that task type.
 | Template maintenance | `docs/0_GROUND_RULES.md`, `SYSTEM_PROMPT.md` | All others |
 | Roadmap / planning | `docs/5_ROADMAP_AND_TASKS.md` | All others |
 | Weekly health check | `docs/15_HEALTH_CHECK.md` | All others |
-| Code — UI copy / i18n | `docs/0_GROUND_RULES.md`, `docs/7_CONTENT_I18N.md` | `docs/2_ARCHITECTURE.md`, `docs/4_SEO_AND_AEO.md`, `docs/6_CONTENT_AND_SOCIAL.md` |
+| Code — UI copy / i18n | `docs/0_GROUND_RULES.md` | Not applicable to the minimal profile |
 | Code — content layer decision (i18n vs storage vs MD) | `docs/0_GROUND_RULES.md`, `docs/7_CONTENT_I18N.md`, `docs/2_ARCHITECTURE.md` | `docs/3_UI_UX_GUIDELINES.md`, `docs/6_CONTENT_AND_SOCIAL.md` |
-| Code — data / analysis | `docs/0_GROUND_RULES.md`, `docs/8_DATA_AND_ANALYSIS.md` | `docs/3_UI_UX_GUIDELINES.md`, `docs/4_SEO_AND_AEO.md`, `docs/6_CONTENT_AND_SOCIAL.md` |
+| Code — data / analysis | `docs/0_GROUND_RULES.md` | Not applicable to the minimal profile |
 | Agent skill — create/edit | `docs/9_AGENT_SKILLS.md`, `skills/template/SKILL.md` | All others |
 | Agent safety review | `docs/10_AGENT_SAFETY.md`, `SYSTEM_PROMPT.md` | All others |
 | Compliance review | `docs/0_GROUND_RULES.md`, `docs/13_COMPLIANCE_FRAMEWORKS.md`, `SECURITY.md` | All others |
@@ -114,4 +114,3 @@ Para qualquer biblioteca, framework, SDK, API ou CLI listada no **Tech Stack** a
 - Every PR that adds, moves, or removes artifacts in `stakeholders/`, `pitches/`, `research/`, `decisions/`, `meetings/` (or equivalent) must update `INDEX.md` — same rule as CHANGELOG and roadmap
 
 See `INDEX.md` template for the required structure.
-
